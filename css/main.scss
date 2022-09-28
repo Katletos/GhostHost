@@ -7,7 +7,7 @@
 }
 
 .header {
-    background-color: #000000;
+    background-image: url("/img/header/servers.png");
 }
 
 .container {
@@ -71,5 +71,46 @@
         font-family: Georgia, sans-serif;
         font-style: italic;
         font-size: 32pt;
+    }
+}
+
+.functions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.functions-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    // .functions-card__logo
+
+    &__logo {
+        margin: 15px;
+    }
+
+    // .functions-card__header
+
+    &__header {
+        color: #000000;
+        font-family: Lato, sans-serif;
+        font-style: heavy;
+        font-size: 18pt;
+    }
+
+    // .functions-card__description
+
+    &__description {
+        color: #7e7e7e;
+        font-family: FontAwesome, sans-serif;
+        font-style: regular;
+        font-size: 16pt;
+        text-align: center;
+
+        margin: 15px 0px;
     }
 }
