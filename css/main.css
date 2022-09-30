@@ -5,7 +5,6 @@
   list-style-type: none;
   color: #ffffff;
 }
-
 .header {
   background-image: url("/img/header/servers.png");
 }
@@ -54,6 +53,152 @@
   font-family: Georgia, sans-serif;
   font-style: italic;
   font-size: 32pt;
+}
+
+.price-list 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+}
+
+
+.price-list {
+  padding-bottom: 10%;
+  border-bottom-style: dashed;
+  border-bottom-width: 4px;
+  border-bottom-color: grey;
+
+  column-gap: 4%;
+}
+.package-item {
+  background-color: white;
+  box-shadow: inset  0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(170, 169, 169, 0.3);
+  min-width: 255px;
+  min-height: 560px;
+}
+
+.package-item-gold {
+  border-top: 0.35rem solid gold;
+}
+.package-item-grey {
+  border-top: 0.35rem solid grey;
+}
+.package-item-red {
+  border-top: 0.35rem solid red;
+}
+.package-item-green {
+  border-top: 0.35rem solid green;
+}
+
+.package-item__icon img {
+  max-width: 32px;
+  max-height: 32px; 
+  margin-top: 10%;
+}
+
+.package-item__icon {  
+  width: 96px;
+  height: 96px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.package-item__title {
+  text-transform: uppercase;
+  font-size: larger;
+  font-weight: 600;
+  color:black;
+  text-align: center;
+  padding-bottom: 7.5%;
+}
+
+.package-item__text {
+  display:flex;
+  column-gap: 22px;
+  max-width: 220px;
+  width: fit-content;
+  margin: auto;
+
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+.package-item__feature-names li {
+  color:grey;
+  font-weight: smaller;
+  text-align: left;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.package-item__feature-values li {
+  font-weight: 600;
+  text-align: right;
+  margin-top: 16px;
+}
+
+.feature-values-gold li {
+  color: gold;
+}
+.feature-values-grey li {
+  color: grey;
+}
+.feature-values-red li {
+  color: red;
+}
+.feature-values-green li {
+  color: green;
+}
+
+.package-item__price {
+  padding-top:11.5%;
+  padding-bottom:2%;
+  text-align: center;
+  font-weight: 500;
+  font-size:xx-large;
+  color: black;
+  margin:auto;
+}
+.package-item__price::before{
+  content: "$";
+  font-size:large;
+  font-weight: bold;
+  font-style:italic;
+  vertical-align: super;
+}
+.package-item__price::after{
+  content:"/Mo";
+  color: grey;
+  font-size: medium;
+  font-weight: 300;
+}
+.package-item__select-button{
+  padding-top: 8%;
+  border-top: 0.3rem solid;
+  width:fit-content;
+  margin:auto;
+}
+
+.select-button-gold {
+  border-color: gold; 
+}
+.select-button-grey {
+  border-color: grey; 
+}
+.select-button-red {
+  border-color: red; 
+}
+.select-button-green {
+  border-color: green; 
+}
+.package-item__select-button a{
+  font-size:large;
+  font-weight: 600;
+  color:black;
+  text-transform: uppercase;
 }
 
 .functions {
