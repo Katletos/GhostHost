@@ -74,6 +74,114 @@
     }
 }
 
+.package-item {
+    background-color: white;
+    box-shadow: inset  0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(170, 169, 169, 0.3);
+    min-width: 255px;
+    min-height: 560px;
+
+    &__icon {
+        width: 96px;
+        height: 96px;
+      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;   
+    }
+    &__icon img {
+        max-width: 32px;
+        max-height: 32px; 
+        margin-top: 10%;  
+    }
+    &__title{
+        text-transform: uppercase;
+        font-size: larger;
+        font-weight: 600;
+        color:black;
+        text-align: center;
+        padding-bottom: 7.5%;
+    }
+    &__text{
+        display:flex;
+        column-gap: 22px;
+        max-width: 220px;
+        width: fit-content;
+        margin: auto;
+      
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey; 
+    }
+    &__feature-names li {
+        color:grey;
+        font-weight: smaller;
+        text-align: left;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    &__features-values li {
+        font-weight: 600;
+        text-align: right;
+        margin-top: 16px;
+    }
+    &__price {
+        padding-top:11.5%;
+        padding-bottom:2%;
+        text-align: center;
+        font-weight: 500;
+        font-size:xx-large;
+        color: black;
+        margin:auto;
+    }
+    &__price::before{
+        content: "$";
+        font-size:large;
+        font-weight: bold;
+        font-style:italic;
+        vertical-align: super;
+    }
+    &__price::after{
+        content:"/Mo";
+        color: grey;
+        font-size: medium;
+        font-weight: 300;
+    }
+
+    &__select-button {
+        padding-top: 8%;
+        border-top: 0.3rem solid;
+        width:fit-content;
+        margin:auto;
+    }
+  }
+  //customization of each column
+  .package-item-gold {
+    border-top: 0.35rem solid gold;
+  }
+  .package-item-grey {
+    border-top: 0.35rem solid grey;
+  }
+  .package-item-red {
+    border-top: 0.35rem solid red;
+  }
+  .package-item-green {
+    border-top: 0.35rem solid green;
+  }
+  
+  .feature-values-gold li {
+    color: gold;
+  }
+  .feature-values-grey li {
+    color: grey;
+  }
+  .feature-values-red li {
+    color: red;
+  }
+  .feature-values-green li {
+    color: green;
+  }
+  
+
 .functions {
     display: flex;
     flex-direction: row;
