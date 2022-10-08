@@ -73,6 +73,20 @@
         font-size: 32pt;
     }
 }
+.price-list 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+
+  padding-bottom: 6%;
+  border-bottom-style: dashed;
+  border-bottom-width: 4px;
+  border-bottom-color: grey;
+  column-gap: 4%;
+}
 
 .package-item {
     background-color: white;
