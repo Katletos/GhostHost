@@ -1,3 +1,31 @@
+@font-face {
+  font-family: "Lato-Black";
+  src: url("../fonts//Lato-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("../fonts/Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url("../fonts/Lato-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Heavy';
+  src: url("../fonts/Lato-Heavy.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-SemiBold';
+  src: url("../fonts/Lato-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("../fonts/Lato-Light.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +34,7 @@
   color: #ffffff;
 }
 .header {
-  background-image: url("/img/header/servers.png");
+  background-image: url("../img/header/servers.png");
 }
 
 .container {
@@ -87,12 +115,12 @@
   border-top: 0.35rem solid red;
 }
 .package-item-green {
-  border-top: 0.35rem solid green;
+  border-top: 0.35rem solid #1abc9c;
 }
 
 .package-item__icon img {
-  max-width: 32px;
-  max-height: 32px; 
+  max-width: 64px;
+  max-height: 64px; 
   margin-top: 10%;
 }
 
@@ -107,11 +135,10 @@
 }
 .package-item__title {
   text-transform: uppercase;
-  font-size: larger;
-  font-weight: 600;
   color:black;
   text-align: center;
   padding-bottom: 7.5%;
+  font-family: 'Lato-Bold';
 }
 
 .package-item__text {
@@ -126,15 +153,15 @@
 }
 .package-item__feature-names li {
   color:grey;
-  font-weight: smaller;
   text-align: left;
   margin-top: 10%;
   margin-bottom: 10%;
+  font-family: 'Lato-Light';
 }
 .package-item__feature-values li {
-  font-weight: 600;
   text-align: right;
   margin-top: 16px;
+  font-family: 'Lato-SemiBold';
 }
 
 .feature-values-gold li {
@@ -147,7 +174,7 @@
   color: red;
 }
 .feature-values-green li {
-  color: green;
+  color: #1abc9c;
 }
 
 .package-item__price {
@@ -161,16 +188,18 @@
 }
 .package-item__price::before{
   content: "$";
-  font-size:large;
-  font-weight: bold;
-  font-style:italic;
   vertical-align: super;
+  font-weight: bold;
+  font-size: large;
+  font-family: 'Lato-Heavy';
 }
 .package-item__price::after{
   content:"/Mo";
   color: grey;
   font-size: medium;
   font-weight: 300;
+  font-family: 'Lato-Regular';
+  
 }
 .package-item__select-button{
   padding-top: 8%;
@@ -189,7 +218,7 @@
   border-color: red; 
 }
 .select-button-green {
-  border-color: green; 
+  border-color: #1abc9c;
 }
 .package-item__select-button a{
   font-size:large;
@@ -212,24 +241,38 @@
   border-right: 2px dashed grey;
   padding-right: 7.5%;
 }
+.about-text__title::after{
+  content: " Us";
+  color: black;
+  text-align: left;
+  font-weight: 100;
+  font-family: 'Lato-Regular';   
+}
 .about-text__title{
   color:black;
   font-size:xx-large;
   text-align: left;
   padding-bottom:6%;
+  font-family: 'Lato-Black';
 }
 .about-text__info{
-  font-size:small;
+  padding-right:8%;
   color:grey;
-  text-align:left;
+  text-align: justify;
   line-height:1.7em;
+  font-weight: 900;
+  font-family: 'Lato-Thin';
 }
 .about-cards{
   width:55%;
   padding-left: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about-card{
+  margin: auto;
   display:flex;
   flex-direction: column;
   align-items: center;
@@ -237,6 +280,7 @@
   text-align: center;
   gap: 10px;
 }
+
 .about-card__name{
   color:black;
   font-size: large;
@@ -249,14 +293,20 @@
   max-width: 96px;
   max-height: 96px;
 }
+
 .about-card__links{
   display:flex;
-  gap: 20px;
+  gap: 20px
+}
+.link:hover{
+  filter:invert(10%);
 }
 .link {
   max-width: 16px;
   max-height: 16px;
+  filter:invert(80%);
 }
+
 .functions {
   display: flex;
   flex-direction: row;
