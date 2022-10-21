@@ -82,9 +82,16 @@
   font-style: italic;
   font-size: 32pt;
 }
+.packages {
+  background-image: url("../img/pricelist/background.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
 
+}
 .price-list 
-{
+{ 
+  padding-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,23 +100,24 @@
 }
 .price-list {
   padding-bottom: 6%;
-  border-bottom-style: dashed;
-  border-bottom-width: 4px;
-  border-bottom-color: grey;
+  border-bottom: 3.5px dotted rgb(215, 215, 215);
   column-gap: 4%;
 }
+/*Default font-family for whole item is Lato-Bold
+*/
 .package-item {
   background-color: white;
   box-shadow: inset  0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(170, 169, 169, 0.3);
   min-width: 250px;
   min-height: 560px;
+  font-family: 'Lato-Bold';
 }
 
 .package-item-gold {
   border-top: 0.35rem solid gold;
 }
 .package-item-grey {
-  border-top: 0.35rem solid grey;
+  border-top: 0.35rem solid #7f8c8d;
 }
 .package-item-red {
   border-top: 0.35rem solid red;
@@ -138,7 +146,6 @@
   color:black;
   text-align: center;
   padding-bottom: 7.5%;
-  font-family: 'Lato-Bold';
 }
 
 .package-item__text {
@@ -147,33 +154,48 @@
   max-width: 220px;
   width: fit-content;
   margin: auto;
-
+}
+.package-item__features {
   border-top: 1px solid grey;
+  padding-bottom: 1em;
   border-bottom: 1px solid grey;
 }
-.package-item__feature-names li {
+
+.package-item__features :first-child {
+  padding-right: 1em;
+  text-align: left;
+}
+
+.package-item__features :last-child {
+  padding-left: 1em;
+  text-align: right;
+}
+.package-item__features td {
+  padding-top: 1em;
+}
+.package-item__feature-names {
   color:grey;
   text-align: left;
   margin-top: 10%;
   margin-bottom: 10%;
   font-family: 'Lato-Light';
 }
-.package-item__feature-values li {
+.package-item__feature-values {
   text-align: right;
   margin-top: 16px;
   font-family: 'Lato-SemiBold';
 }
 
-.feature-values-gold li {
+.feature-values-gold {
   color: gold;
 }
-.feature-values-grey li {
-  color: grey;
+.feature-values-grey {
+  color: #7f8c8d;
 }
-.feature-values-red li {
+.feature-values-red {
   color: red;
 }
-.feature-values-green li {
+.feature-values-green {
   color: #1abc9c;
 }
 
@@ -181,10 +203,9 @@
   padding-top:11.5%;
   padding-bottom:2%;
   text-align: center;
-  font-weight: 500;
-  font-size:xx-large;
   color: black;
   margin:auto;
+  font-size:xx-large;
 }
 .package-item__price::before{
   content: "$";
@@ -212,7 +233,7 @@
   border-color: gold; 
 }
 .select-button-grey {
-  border-color: grey; 
+  border-color: #7f8c8d;
 }
 .select-button-red {
   border-color: red; 
@@ -238,7 +259,7 @@
 }
 .about-text{
   max-width: 35%;
-  border-right: 2px dashed grey;
+  border-right: 3.5px dotted rgb(215, 215, 215);
   padding-right: 7.5%;
 }
 .about-text__title::after{
