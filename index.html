@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/a6aa220423.js" crossorigin="anonymous"></script>
     <title>GhostHost</title>
 </head>
 
@@ -13,28 +14,16 @@
     <header class="header">
         <div class="container">
             <nav class="navbar">
-                <a class="navbar__logo" href="./index.html">
-                    <img src="img/header/logo.png" alt="Logo: GhostHost" />
+                <a class="navbar-link" href="./index.html">
+                    <img src="img/header/logo.png" alt="Logo: GhostHost" class="navbar-link__logo" />
                 </a>
                 <menu class="navbar__menu">
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">Home</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">Domain</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">Hosting</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">Clients</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">Blog</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">Support</a>
-                    </li>
+                    <a href="#" class="navbar__item navbar__item_hover">Home</a>
+                    <a href="#" class="navbar__item navbar__item_hover">Domain</a>
+                    <a href="#" class="navbar__item navbar__item_hover">Hosting</a>
+                    <a href="#" class="navbar__item navbar__item_hover">Clients</a>
+                    <a href="#" class="navbar__item navbar__item_hover">Blog</a>
+                    <a href="#" class="navbar__item navbar__item_hover">Support</a>
                 </menu>
             </nav>
             <div class="header-text">
@@ -51,7 +40,36 @@
         <a class="registration__register">REGISTER</a>
     </section>
     <section class="domain">
+        <h3>Would you like to buy a new domain ?</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id
+            molestier.</p>
+        <div class="domain-choose">
+            <span class="world-wide">www.</span>
+            <input class="domain__input" type="text" placeholder="What do you want?">
+            <select class="domain__name">
+                <option value="com">.com</option>
+                <option value="net">.net</option>
+                <option value="ru">.ru</option>
+                <option value="org">.org</option>
+            </select>
+        </div>
 
+        <div class="domain-price">
+            <table class="domain-table">
+                <tr class="table-row">
+                    <td class="top">.COM</td>
+                    <td class="top one">1 Year</td>
+                    <td class="top price">$9.00 USD</td>
+                    <td class="top">Transfer Price No</td>
+                </tr>
+                <tr class="table-row">
+                    <td class="bottom">.NET</td>
+                    <td class="bottom one">1 Year</td>
+                    <td class="bottom price">$9.00 USD</td>
+                    <td class="bottom"><span>Transfer Price No</span></td>
+                </tr>
+            </table>
+        </div>
     </section>
     <div class="packages">
         <div class="backend"></div>
@@ -332,7 +350,9 @@
     </div>
     <section class="functions">
         <div class="functions-card">
-            <img src="" alt="Logo" class="functions-card__logo">
+            <div class="icon-flash icon-yellow">
+                <i class="fa-solid fa-bolt-lightning"></i>
+            </div>
             <p class="functions-card__header">Fast servers</p>
             <p class="functions-card__description">
                 Nulla dapibus neque augue, quis<br>
@@ -340,7 +360,9 @@
             </p>
         </div>
         <div class="functions-card">
-            <img src="" alt="Logo" class="functions-card__logo">
+            <div class="icon-flash icon-blue">
+                <i class="fas fa-cloud"></i>
+            </div>
             <p class="functions-card__header">Cloud servers</p>
             <p class="functions-card__description">
                 Nulla dapibus neque augue, quis<br>
@@ -348,7 +370,9 @@
             </p>
         </div>
         <div class="functions-card">
-            <img src="" alt="Logo" class="functions-card__logo">
+            <div class="icon-flash icon-grey">
+                <i class="fas fa-arrows-alt"></i>
+            </div>
             <p class="functions-card__header">Domain Transfer</p>
             <p class="functions-card__description">
                 Nulla dapibus neque augue, quis<br>
@@ -356,7 +380,9 @@
             </p>
         </div>
         <div class="functions-card">
-            <img src="" alt="Logo" class="functions-card__logo">
+            <div class="icon-flash icon-red">
+                <i class="fas fa-comments"></i>
+            </div>
             <p class="functions-card__header">Live Support</p>
             <p class="functions-card__description">
                 Nulla dapibus neque augue, quis<br>
@@ -366,55 +392,74 @@
     </section>
     </main>
     <footer class="footer">
-        <nav class="footer-navbar">
-            <img src="" alt="Logo: GhostHost" class="footer-navbar__logo">
-            <menu class="footer-navbar__menu">
-                <li class="footer-navbar__item">HOME</li>
-                <li class="footer-navbar__item">ABOUT US</li>
-                <li class="footer-navbar__item">BLOG</li>
-                <li class="footer-navbar__item">POLICY</li>
-                <li class="footer-navbar__item">CONTACT</li>
-            </menu>
-        </nav>
-        <div class="footer-list">
-            <div class="footer-list__item">
-                <p class="footer-list__text">
-                    Lorem ipsum dolor sit amet, consecteteeseuri
-                    adipiscing elit. Donec mollis commodoeesene
-                    que, non commodo risus volutpat vel.
-                </p>
-                <p class="footer-list__author">
-                    Design by Mert Can Eyriyer
-                </p>
-            </div>
-            <div class="footer-list__item">
-                <div class="footer-list__links">
-                    <div class="footer-list__column">
-                        <div class="footer-list-links__link">> Support</div>
-                        <div class="footer-list-links__link">> Account</div>
-                        <div class="footer-list-links__link">> Product Catalog</div>
-                        <div class="footer-list-links__link">> Shortcodes</div>
-                    </div>
-                    <div class="footer-list__column">
-                        <div class="footer-list-links__link">> Site Map</div>
-                        <div class="footer-list-links__link">> Whois Search</div>
-                        <div class="footer-list-links__link">> Web Mail</div>
-                        <div class="footer-list-links__link">> Find Domain</div>
+        <div class="container">
+            <nav class="footer-navbar">
+                <img src="img/footer/emblem.png" alt="Logo: GhostHost" class="footer-navbar__logo">
+                <menu class="footer-navbar__menu">
+                    <a class="footer-navbar__item">HOME</a>
+                    <a class="footer-navbar__item">ABOUT US</a>
+                    <a class="footer-navbar__item">BLOG</a>
+                    <a class="footer-navbar__item">POLICY</a>
+                    <a class="footer-navbar__item">CONTACT</a>
+                </menu>
+            </nav>
+            <div class="footer-list">
+                <div class="footer-list__item">
+                    <p class="footer-list__text">
+                        Lorem ipsum dolor sit amet, consecteteeseuri
+                        adipiscing elit. Donec mollis commodoeesene
+                        que, non commodo risus volutpat vel.
+                    </p>
+                    <p class="footer-list__author">
+                        Design by <b>Mert Can Eyriyer </b>
+                    </p>
+                </div>
+                <div class="footer-list__item">
+                    <nav class="footer-list__links">
+                        <ul>
+                            <li>
+                                <i class="fas fa-angle-right"></i><a href="#">Support</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i><a href="#">Account</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i><a href="#">Product Catalog</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i><a href="#">Shortcodes</a>
+                            </li>
+                        </ul>
+
+                        <ul>
+                            <li>
+                                <i class="fas fa-angle-right"></i><a href="#">Site Map</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i><a href="#">Whois Search</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i><a href="#">Web Mail</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i><a href="#">Find Domain</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer-list__item">
+                    <div class="footer-contact">
+                        <ul>
+                            <li><i class="fas fa-phone contact-icon"></i><a href="tel:000000000000">0000-0000-0000</a>
+                            </li>
+                            <li><i class="fas fa-envelope contact-icon"></i><a
+                                    href="mailto:informationteam@ghosthost.com?subject = Question">informationteam@ghosthost.com</a>
+                            </li>
+                            <li>Lorem Ipsum Street, Lorem Avenue,</li>
+                            <li>Lorem Ipsum</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="footer-list__item">
-                <a href="tel:80291234567" class="footer-list__phone">
-                    <img src="" alt="Phone logo" class="footer-list__logo">
-                    80291234567
-                </a>
-                <a href="mailto:informationteam@ghosthost.com?subject = Question">
-                    <img src="" alt="Phone logo" class="footer-list__logo">
-                    informationteam@ghosthost.com
-                </a>
-                <p class="footer-list__text">
-                    Lorem Ipsum Street, Lorem Avenue, Lorem Ipsum
-                </p>
             </div>
         </div>
     </footer>
