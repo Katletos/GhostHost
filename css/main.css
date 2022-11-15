@@ -282,22 +282,62 @@ td.bottom::before {
   width: 110px;
   height: 18px;
 }
-
+.registration__button{
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-right-width: 2px;
+  transform: skewX(-10deg);
+}
+.registration__login-prebutton{
+  position: absolute;
+  height: 120px;
+  width: 60px;
+  background: rgb(32, 65, 74);
+  z-index: -1;
+}
+.registration__register-prebutton{
+  position: absolute;
+  height: 120px;
+  width: 60px;  
+  margin-left: calc(100% - 60px);
+  background: rgb(46, 171, 108);
+  z-index: -1;
+}
+.registration__login {
+  background-color: rgb(32, 65, 74);
+  width: 740px;
+  height: 100%;
+  z-index: 2;
+}
+.registration a {
+  transform: skewX(10deg);
+}
+.registration__login :hover{  
+  font-style: italic;
+}
+.registration__register :hover{  
+  font-style: italic;
+}
+.registration__register {
+  background-color: rgb(46, 171, 108);
+  width: 740px;
+  height: 100%;
+  z-index: 2;
+}
 
 .registration {
-  height: 125px;
-  background-image: url("../img/registration/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
   display: flex;
   align-items: center;
-  justify-content: space-around;
-
+  justify-content: start;
   font-size: 20px;
   font-family: Lato-Bold;
+  height: 120px;
+  text-align: center;
 }
+
 .functions {
   display: flex;
   flex-direction: row;
