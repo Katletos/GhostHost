@@ -292,23 +292,24 @@ td.bottom::before {
   transform: skewX(-10deg);
 }
 .registration__login-prebutton{
-  position: absolute;
   height: 120px;
-  width: 60px;
+  width: 2%;
+  position: absolute;
+  margin: auto;
   background: rgb(32, 65, 74);
   z-index: -1;
 }
 .registration__register-prebutton{
-  position: absolute;
   height: 120px;
-  width: 60px;  
-  margin-left: calc(100% - 60px);
+  width: 3%;
+  position: absolute;
+  margin-left: 97%;
   background: rgb(46, 171, 108);
   z-index: -1;
 }
 .registration__login {
   background-color: rgb(32, 65, 74);
-  width: 740px;
+  width: 49%;
   height: 100%;
   z-index: 2;
 }
@@ -323,7 +324,7 @@ td.bottom::before {
 }
 .registration__register {
   background-color: rgb(46, 171, 108);
-  width: 740px;
+  width: 49%;
   height: 100%;
   z-index: 2;
 }
@@ -491,6 +492,7 @@ td.bottom::before {
 }
 
 .footer-list__links {
+  font-family: "Lato-Light";
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -499,13 +501,13 @@ td.bottom::before {
   padding: 3px 65px;
   border-left: 1px solid #808080;
   border-right: 1px solid #808080;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .footer-list__links ul {
   line-height: 1.35;
   list-style-type: none;
-  min-width: 180px;
+  min-width: 140px;
 }
 
 .footer-list__links li {
